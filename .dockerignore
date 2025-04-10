@@ -1,0 +1,57 @@
+# Игнорировать всё
+*
+
+# Но разрешить следующие файлы и директории
+!Dockerfile
+!docker-compose*.yml
+!.dockerignore
+
+# Разрешить Python файлы
+!*.py
+!*.pyc
+!*.pyo
+!*.pyd
+
+# Разрешить зависимости
+!requirements.txt
+!pyproject.toml
+!poetry.lock
+!Pipfile
+!Pipfile.lock
+
+# Разрешить исходный код приложения
+!app/
+!src/
+!main.py
+
+# Разрешить статические файлы (если есть)
+!static/
+!templates/
+
+# Разрешить конфигурационные файлы (если нужны)
+!alembic.ini
+!alembic/
+!migrations/
+
+# Исключить всё остальное
+.git/
+.gitignore
+.venv/
+venv/
+env/
+.env
+*.log
+*.swp
+*.swo
+__pycache__/
+*.egg-info/
+.idea/
+.vscode/
+*.sqlite
+*.db
+*.cache
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
